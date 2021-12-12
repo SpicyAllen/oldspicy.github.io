@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+
+<style> 
+
+body{
+
+background-color:#CACFD2;
+
+}
+
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#F5B041;
+}
+
+.sekil{
+position:absolute;
+height:2%;
+width: 3%;
+
+}
+
+
+
+
+li{
+float:left;
+border-right: 3px solid black;
+}
+
+li a{
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+padding: 10px;
+
+}
+
+li a:hover:not(.active){
+background-color:#A9CCE3;
+}
+
+.active{
+background-color:#58D68D;
+}
+
+.store1{
+    position:absolute;
+background-color:transparent;
+width:200px;
+height:200px;
+left:7%;
+top:22%;
+}
+
+.store1-inner{
+position: relative;
+width:100%;
+height:100%;
+text-align: center;
+transition:transform 0.7s;
+transform-style: preserve-3d;
+box-shadow:0 4px 8px 0rgba(0,0,0,0.2);
+}
+
+.store1:hover .store1-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+.store1-front, .store1-back{
+position:absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.store1-front{
+background-color: whitesmoke;
+color:black;
+}
+
+.store1-back{
+background-color: chocolate;
+color: cornsilk;
+transform:rotateY(180deg);
+opacity: 0.5;
+
+
+}
+
+
+
+.store2{
+    position:absolute;
+background-color:transparent;
+width:200px;
+height:200px;
+left:30%;
+top:22%;
+}
+
+.store2-inner{
+position: relative;
+width:100%;
+height:100%;
+text-align: center;
+transition:transform 0.7s;
+transform-style: preserve-3d;
+box-shadow:0 4px 8px 0rgba(0,0,0,0.2);
+}
+
+.store2:hover .store2-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+.store2-front, .store2-back{
+position:absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.store2-front{
+background-color: whitesmoke;
+color:black;
+}
+
+.store2-back{
+background-color: chocolate;
+color: cornsilk;
+transform:rotateY(180deg);
+opacity: 0.5;
+}
+
+.store3{
+    position:absolute;
+background-color:transparent;
+width:200px;
+height:200px;
+left:53%;
+top:22%;
+}
+
+.store3-inner{
+position: relative;
+width:100%;
+height:100%;
+text-align: center;
+transition:transform 0.7s;
+transform-style: preserve-3d;
+box-shadow:0 4px 8px 0rgba(0,0,0,0.2);
+}
+
+.store3:hover .store3-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+.store3-front, .store3-back{
+position:absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.store3-front{
+background-color: whitesmoke;
+color:black;
+}
+
+.store3-back{
+background-color: chocolate;
+color: cornsilk;
+transform:rotateY(180deg);
+opacity: 0.5;
+}
+
+
+.store4{
+position:absolute;
+background-color:transparent;
+width:200px;
+height:200px;
+left:75%;
+top:22%;
+}
+
+.store4-inner{
+position: relative;
+width:100%;
+height:100%;
+text-align: center;
+transition:transform 0.7s;
+transform-style: preserve-3d;
+box-shadow:0 4px 8px 0rgba(0,0,0,0.2);
+}
+
+.store4:hover .store4-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+.store4-front, .store4-back{
+position:absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.store4-front{
+background-color: whitesmoke;
+color:black;
+}
+
+.store4-back{
+background-color: chocolate;
+color: cornsilk;
+transform:rotateY(180deg);
+opacity: 0.5;
+}
+
+
+.store5{
+position:absolute;
+background-color:transparent;
+width:200px;
+height:200px;
+left:7%;
+top:66%;
+}
+
+.store5-inner{
+position: relative;
+width:100%;
+height:100%;
+text-align: center;
+transition:transform 0.7s;
+transform-style: preserve-3d;
+box-shadow:0 4px 8px 0rgba(0,0,0,0.2);
+}
+
+.store5:hover .store5-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+.store5-front, .store5-back{
+position:absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.store5-front{
+background-color: whitesmoke;
+color:black;
+}
+
+.store5-back{
+background-color: chocolate;
+color: cornsilk;
+transform:rotateY(180deg);
+opacity: 0.5;
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+<ul>
+
+
+
+
+
+<li > <a href="#"> Home</a> </li>
+<li> <a href="#" class="active" > Mağazalar </a> </li>
+<li> <a href="endirim.html" > Endirimlər </a> </li>
+<li> <a href="haqqimiz.html" > Haqqımızda </a> </li>
+<li> <a href="elaqe.html" > Bizimlə əlaqə </a> </li>
+
+</ul>
+
+<div class="store1">
+    <div class="store1-inner">
+        <div class="store1-front">
+<img src="kitabizi.jpeg" alt="avatar" style="height:200px; width:200px" >
+</div>
+<div class="store1-back" >
+  <h2> Kitab İzi</h2>  <center> <p>Türkiyədən Kitabların Sərfəli Qiymətə Sifarişi </br>
+    📚Yeni və İkinci Əl Kitablar </br>
+    🏘Rayonlara çatdırılma</br>
+    🚊Metrolara Çatdırılma</p>
+    </center>
+</div>
+</div>
+</div>
+
+<div class="store2">
+    <div class="store2-inner">
+        <div class="store2-front">
+<img src="kitaber.jpeg" alt="avatar" style="height:200px; width:200px" >
+</div>
+<div class="store2-back" >
+  <h2> Kitab_er</h2> 
+   <center> <p>Türkiyədən Kitabların Sifarişi</center>
+</div>
+</div>
+</div>
+
+<div class="store3">
+    <div class="store3-inner">
+        <div class="store3-front">
+<img src="kitabevim.jpeg" alt="avatar" style="height:200px; width:200px" >
+</div>
+<div class="store3-back" >
+  <h2> Kitabevim.az</h2> 
+   <center> <p>Ünvan: Nəsimi r-n., Puşkin 32A, 28 may metrosunun yaxınlığı Extra Brend 2-ci mərtəbə. İş saatı: 10:00-20:00</center>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="store4">
+    <div class="store4-inner">
+        <div class="store4-front">
+<img src="kitabimaz.jpeg" alt="avatar" style="height:200px; width:200px" >
+</div>
+<div class="store4-back" >
+  <h2> Kitabim.az</h2> 
+   <center> <p> 6 ölkədən kitab, dərgi sifarişi </br>Tibb kitabları </br> Dil, komputer kitabları </br> Rayonlara çatdırılma </br>Əlaqə: 0774040414 Keyfiyyətə, orjinallığa zəmanət </p> </center>
+</div>
+</div>
+</div>
+
+<div class="store5">
+    <div class="store5-inner">
+        <div class="store5-front">
+            <img src="kitabalemi.jpeg" alt="avatar" style="width:200px; height=200px" >
+        </div>
+<div class="store5-back">
+    <h2>Kitab_alemi</h2>
+<center><p> Ölkənin ƏnBöyük Kitab Səhifəsi </br>Bütün növ kitabların satışı </br> Türkiyədən kitab sifarişi Dərsliklərlərin satışı </p>  </center>
+</div>
+</div>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
